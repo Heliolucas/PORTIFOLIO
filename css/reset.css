@@ -17,13 +17,8 @@ body {
     justify-content: space-between;
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
-    transition: 0.2 ease-in-out;
-}
 
-                        /* HEADER */
+/* HEADER */
 
 header {
     background-color: #222;
@@ -48,6 +43,7 @@ header nav{
 header nav a {
     margin-right: 1.3em;
     font-size: 1.5em;
+    text-decoration: none;
 }
 
 header h1, a {
@@ -87,6 +83,7 @@ main .main-content .text p{
     width: 85%;
     font-size: 1.1em;
     font-weight: 300;
+    line-height: 26px;
 }
 /* Cards */
 
@@ -95,10 +92,10 @@ main .techs .cards-conteiner {
     align-items: center;
 }
 
-main .techs .cards-conteiner .card{
+main .techs .cards-conteiner .card {
     height: 100px;
     width: 100px;
-    padding:10px;
+    padding: 10px;
     background-color:#fff;
     border-radius: 8px;
     margin-right: 1.8em;
@@ -108,7 +105,12 @@ main .techs .cards-conteiner .card{
     align-items: center;
     justify-content: center;
 
-    transition: box-shadow 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+main .techs .cards-conteiner .card a{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
 }
 
 main .techs .cards-conteiner .card img{
@@ -118,6 +120,7 @@ main .techs .cards-conteiner .card img{
 main .techs .cards-conteiner .card:hover{
     box-shadow: 0px 0px 8px #00e0ff;
 }
+
 /* Figure */
 
 main figure{
@@ -145,5 +148,9 @@ main figure img:hover{
 /* FOOTER */
 footer p{
     text-align: center;
+}
+footer p:hover{
+    font-size: 1.3em;
+    transition: 0.4s ease-in-out;
 }
 
